@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<h:outputStylesheet library="css" name="material-dashboard.css" />
+	<title>Informações Buffet</title>
+</h:head>
+
+<ui:composition template="/WEB-INF/template/template.xhtml">
+	<ui:define name="content">
+		<h:body>
+			<h:form id="formBuffet">
+				<div class="formulario-cadastro">
+					<div class="formulario-container">
+						<h3>Cadastrar Serviço</h3>
+						<h:outputLabel class="output-cadastro" value="Cliente: " />
+						<h:inputText class="input-cadastro" type="text"
+							value="#{formBean.cliente}" required="true" />
+						<br />
+						<h:outputLabel class="output-cadastro" value="Convidados: " />
+						<h:inputText class="input-cadastro" type="text"
+							value="#{formBean.convidados}" />
+						<br />
+						<h:outputLabel class="output-cadastro" value="Sobremesa: " />
+						<h:selectOneMenu class="input-cadastro"
+							value="#{formBean.sobremesa}" required="true">
+							<f:selectItem itemValue="Sim" itemLabel="Sim" />
+							<f:selectItem itemValue="Não" itemLabel="Não" />
+						</h:selectOneMenu>
+						<br />
+						<h:commandButton class="button-formulario" value="Enviar"
+							action="#{formBean.salvar(formBean)}" />
+						<h:button class="button-formulario" value="Cancelar"
+							outcome="index.xhtml" />
+					</div>
+				</div>
+				
+				<div class="layout-container"
+					style="border-style: solid; padding: 20px">
+					<h3>
+						<img src="resources/img/logo2.png" alt="" style="width: 15%;" />
+						Proposta Comercial
+					</h3>
+					<div class="contato">
+						<label>Contato: +55 21 9999-9999&emsp; Email:
+							contato@dmbuffet.com</label> <label>Rua Ali Perto, 42 -
+							Botafogo&emsp;Rio de Janeiro - RJ</label> <br />
+					</div>
+					<div class="nome-container">
+						<label class="label-layout">Nome Cliente: </label>
+						<h:outputText class="output-layout" type="text"
+							value="#{formBean.cliente}"></h:outputText>
+						<br /> <label class="label-layout">Quantidade de
+							Convidados: </label>
+						<h:outputText class="output-layout" type="text"
+							value="#{formBean.convidados}"></h:outputText>
+						<br /> <label class="label-layout">Sobremesa: </label>
+						<h:outputText class="output-layout" type="text"
+							value="#{formBean.sobremesa}"></h:outputText>
+						<br /> <label class="label-layout">Quantidade de Garçons:
+						</label>
+						<h:outputText class="output-layout" type="text"
+							value="#{formBean.garcom}"></h:outputText>
+						<br />
+					</div>
+					<div class="valor-container">
+						<label class="label-layout">Valor por Convidado: </label>
+						<h:outputText class="output-layout" type="text"
+							value="#{formBean.valorconv}"></h:outputText>
+						<br /> <label class="label-layout">Taxa de Garçons: </label>
+						<h:outputText class="output-layout" type="text"
+							value="#{formBean.taxagarcom}"></h:outputText>
+						<br /> <label class="label-layout">Taxa de Sobremesas: </label>
+						<h:outputText class="output-layout" type="text"
+							value="#{formBean.taxasobremesa}"></h:outputText>
+						<br /> <label class="label-layout">Valor Total: </label>
+						<h:outputText class="output-layout" type="text"
+							value="#{formBean.total}"></h:outputText>
+						<br />
+					</div>
+				</div>
+			</h:form>
+		</h:body>
+	</ui:define>
+</ui:composition>
+
+
+
+</html>

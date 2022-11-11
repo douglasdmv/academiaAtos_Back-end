@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: black;
+}
+
+.header-container {
+    width: 1200px;
+    height: 96px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container nav ul {
+    list-style: none;
+    line-height: 96px;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    gap: 40px;
+}
+
+.header-container nav ul li {
+    display: inline;
+}
+
+footer {
+	background-color: black;
+	margin-top: 30px;
+}
+
+.footer-container {
+    width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.button-index {
+	margin-left: 700px;
+}
+
+.button-cadastro {
+	font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 72px;
+    margin-top: 30px;
+}
+
+.button-consulta {
+	font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 72px;
+    margin-top: 30px;
+}
+
+.formulario-cadastro {
+	width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.formulario-container {
+	width: 250px;
+}
+
+.formulario-container h3{
+	font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+.output-cadastro {
+	font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.input-cadastro {
+	font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+input {
+	display: flex;
+    justify-content: center;
+}
+
+.button-formulario {
+	font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.layout-container {
+	width: 700px;
+	margin: auto;
+    margin-top: 50px;
+}
+
+.layout-container h3 {
+	font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+.contato {
+	display: grid;
+	font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.label-layout {
+	font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.output-layout {
+	font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.valor-container {
+	text-align: right;
+}
